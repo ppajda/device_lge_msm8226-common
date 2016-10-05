@@ -124,8 +124,7 @@ PRODUCT_PACKAGES += charger charger_res_images
 
 # Gello 
 PRODUCT_PACKAGES += \ 
-    Gello 
-
+    Gello
 
 # GPS
 PRODUCT_PACKAGES += \
