@@ -74,7 +74,7 @@ BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(VENDOR_PATH)/charger/images
 COMMON_GLOBAL_CFLAGS += -DLG_CAMERA_HARDWARE -DCAMERA_VENDOR_L_COMPAT
 
 # QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_QCOM_HARDWARE := false
 TARGET_RIL_VARIANT := caf
 COMMON_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_10
 COMMON_GLOBAL_CPPFLAGS += -DUSE_RIL_VERSION_10
@@ -163,7 +163,7 @@ TARGET_HW_DISK_ENCRYPTION := false
 
 # SELinux policies
 # qcom sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+# include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
